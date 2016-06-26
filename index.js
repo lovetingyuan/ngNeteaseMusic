@@ -245,6 +245,9 @@
                     }
                     ngModelCtrl.$render = function() {
                         scope.other.playList.length = 0;
+                        if(!ngModelCtrl.$modelValue || ngModelCtrl.$modelValue.length === 0) {
+                            return;
+                        }
                         if (ngModelCtrl.$modelValue[0]) {
                             scope.other.currentSong = 'http://music.163.com/#/song?id=' + ngModelCtrl.$modelValue[0];
                         } else {
