@@ -5,13 +5,13 @@
 
 下面是一个例子，`playList`是一个存储歌曲id的数组，`playConfig`是保存着配置信息的对象
 
-```JavaScript
+```Html
 <music-player ng-model="playList" play-config="playConfig"></music-player>
 ```
 
 下面是`playConfig`的选项和含义：
 
-```Json
+```Javascript
 {
 	autoPlay: true, // 表示是否自动播放
     size: 'normal', // 表示正在播放歌曲的面板大小，normal表示标准大小，small表示小面板
